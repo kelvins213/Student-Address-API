@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const admin = require('./routes/admin');
 const app = express();
 
-const url = "mongodb+srv://kelvins213:<password>@cluster0.aaknyyf.mongodb.net/Student-Location?retryWrites=true&w=majority";
+const url = "mongodb+srv://<user>:<password>@cluster0.aaknyyf.mongodb.net/Student-Location?retryWrites=true&w=majority";
 mongoose.connect(url).then(
   () => {
     console.log("Connected with MongoDB");
